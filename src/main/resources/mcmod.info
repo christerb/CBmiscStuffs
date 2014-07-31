@@ -1,0 +1,21 @@
+[
+{
+  "modid": "CBmiscStuffs",
+  "name": "CB Misc Stuffs",
+  "description": "Just me trying understand the basics of MC modding. ;)",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "christerb"
+  ],
+  "credits": "Watching Pahimar's Let's Mod Reboot series on Youtube.",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
