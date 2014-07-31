@@ -1,5 +1,6 @@
 package com.christerb.cbmiscstuffs;
 
+import com.christerb.cbmiscstuffs.configuration.ConfigurationHandler;
 import com.christerb.cbmiscstuffs.proxy.IProxy;
 import com.christerb.cbmiscstuffs.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -17,30 +18,24 @@ public class CBmiscStuffs
     @Mod.Instance(Reference.MOD_ID)
     public static CBmiscStuffs instance;
 
-    @SidedProxy(clientSide = "com.christerb.cbmiscstuffs.proxy.ClientProxy", serverSide = "com.christerb.cbmiscstuffs.proxy.Serverproxy")
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event)
+    public void preInit(FMLPreInitializationEvent event) //Load network handling, mod config, item and blocks
     {
-        /**
-         * Load network handling, mod config, item and blocks
-         */
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
-    public void  init (FMLInitializationEvent event)
+    public void  init (FMLInitializationEvent event) //Registering GUIs, tile entities, crafting recipes etc
     {
-        /**
-         * Registering GUIs, tile entities, crafting recipes etc
-         */
+
     }
 
     @Mod.EventHandler
-    public void  postInit (FMLPostInitializationEvent event)
+    public void  postInit (FMLPostInitializationEvent event) //Wrap up... based on other mods etc...
     {
-        /**
-         * Wrap up... based on other mods etc...
-         */
+
     }
 }
