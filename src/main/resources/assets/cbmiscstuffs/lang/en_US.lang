@@ -1,0 +1,28 @@
+# Creative Tab
+###################################################
+itemGroup.cbmiscstuffs=CB Misc Stuffs
+
+
+
+# Block localizations
+###################################################
+
+# Lights
+tile.cbmiscstuffs:testLamp.name=Test Lamp
+
+
+
+
+# Item localizations
+###################################################
+
+# Weapons
+item.cbmiscstuffs:emeraldSword.name=Emerald Sword
+item.cbmiscstuffs:emeraldNetherSword.name=Emerald Nether Sword
+
+# Tools
+item.cbmiscstuffs:emeraldPickaxe.name=Emerald Pickaxe
+item.cbmiscstuffs:emeraldAxe.name=Emerald Axe
+
+# Items
+item.cbmiscstuffs:obsidianStick.name=Obsidian Stick
